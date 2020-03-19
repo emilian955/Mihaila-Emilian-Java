@@ -14,33 +14,40 @@ public class Catalog implements Serializable {
         this.name=name_;
         this.path=path_;
     }
-    public String getName() {
+
+    public String getPath()
+    {
+        return path;
+    }
+    public String getName()
+    {
         return name;
     }
-
-    public void setName(String name) {
+    public void setPath(String path)
+    {
+        this.path = path;
+    }
+    public void setName(String name)
+    {
         this.name = name;
     }
 
-    public String getPath() {
-        return path;
-    }
 
-    public void setPath(String path) {
-        this.path = path;
-    }
 
-    public void setDocuments(List<Document> documents) {
+    public void setDocuments(List<Document> documents)
+    {
         this.documents = documents;
     }
+    public void add(Document doc)
+    {
+        documents.add(doc);
+    }
 
-    public List<Document> getDocuments() {
+    public List<Document> getDocuments()
+    {
         return documents;
     }
 
-    public void add(Document doc) {
-        documents.add(doc);
-    }
 
     @Override
     public String toString() {

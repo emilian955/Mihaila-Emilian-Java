@@ -12,8 +12,9 @@ public class Main {
     }
 
     private void testCreateSave() {
-        Catalog catalog;
-        catalog = new Catalog("Java Resources", "d:/java/catalog.ser");
+        com.emi.Catalog catalog= new Catalog;
+        catalog.setName("Java Resources");
+        catalog.setPath("D:/java");
         Document doc;
         doc = new Document("java1", "Java Course 1",
                 "https://profs.info.uaic.ro/~acf/java/slides/en/intro_slide_en.pdf");
@@ -25,7 +26,7 @@ public class Main {
 
     private void testLoadView() {
         Catalog catalog = CatalogUtil.load("d:/java/catalog.ser");
-        Document doc = catalog.findById("java1");
+        com.emi.Document doc = catalog.findById("java1");
         CatalogUtil.view(doc);
     }
 }
