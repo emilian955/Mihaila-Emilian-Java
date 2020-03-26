@@ -1,5 +1,6 @@
-import java.awt.geom.Ellipse2D;
 package com.emi;
+
+import java.awt.geom.Ellipse2D;
 
 
 public class NodeShape extends Ellipse2D.Double {
