@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2adfd13a-c996-4185-8e34-80494a820ba7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/emi/DrawingPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/emi/DrawingPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/emi/NodeShape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/emi/NodeShape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/emi/ControlPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/emi/ControlPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/emi/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/emi/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,10 +68,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="656" y="363" key="com.intellij.ide.util.TipDialog" timestamp="1585249044127">
+    <state x="656" y="363" key="com.intellij.ide.util.TipDialog" timestamp="1585252570841">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="656" y="363" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1585249044127" />
+    <state x="656" y="363" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1585252570841" />
     <state x="666" y="158" key="refactoring.ChangeSignatureDialog" timestamp="1585247992690">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

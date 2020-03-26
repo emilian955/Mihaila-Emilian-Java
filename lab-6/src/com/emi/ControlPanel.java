@@ -6,6 +6,8 @@ import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
+import java.awt.image.BufferedImage;
+import java.io.File;
 import java.io.IOException;
 
 public class ControlPanel extends JPanel {
@@ -31,13 +33,14 @@ public class ControlPanel extends JPanel {
         this.resetBtn.addActionListener(this::reset);
 
     }
+    BufferedImage image = ImageIO.read(new File("./imagine.png"));//load
     private void save(ActionEvent e) {
         try {
-            ImageIO.write(frame.canvas.image, "PNG", new File("d:/test.png"));
+            ImageIO.write(this.frame.canvas.image, "PNG", new File("./imagine.png"));
         } catch (IOException ex) { System.err.println(ex); }
     }
     private void reset(ActionEvent actionEvent) {
-        this.frame.canvas.reset();
+        this.frame.canvas.resetBounds();
         this.frame.repaint();
     }
 

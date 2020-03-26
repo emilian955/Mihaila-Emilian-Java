@@ -4,10 +4,10 @@ import com.sun.deploy.panel.ControlPanel;
 
 import javax.swing.*;
 
-public class MainFrame extends JFrame {
+class MainFrame extends JFrame {
     ConfigPanel configPanel;
     ControlPanel controlPanel;
-    public ControlPanel canvas;
+    public DrawingPanel canvas;
 
     public MainFrame() {
         super("My Drawing Application");
@@ -16,12 +16,10 @@ public class MainFrame extends JFrame {
 
     private void init() {
         setDefaultCloseOperation(EXIT_ON_CLOSE);
-        canvas = new DrawingPanel(this);
-        add(canvas, CENTER);
- //...TODO;
-
-
+        this.canvas = new DrawingPanel(this);
+        this.add(this.configPanel, "Sus");
+        this.add(this.canvas, "Mijloc");
+        this.add(this.controlPanel, "Jos");
         pack();
     }
 }
-I
