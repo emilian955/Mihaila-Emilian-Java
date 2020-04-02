@@ -13,6 +13,15 @@ public class Board {
         double x = Math.random();
         return x;
     }
+
+    @Override
+    public String toString() {
+        return "Board{" +
+                "n=" + n +
+                ", tokeni=" + tokeni +
+                '}';
+    }
+
     public Board(int n_){
         this.n=n_;
         Random r=new Random();
