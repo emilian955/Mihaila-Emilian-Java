@@ -27,7 +27,7 @@ public class Board {
         Random r=new Random();
             ArrayList<Integer> list = new ArrayList<Integer>();
             for (int i = 1; i<this.n; i++) {
-                list.add(r.nextInt(90) + 10);
+                list.add(r.nextInt(20) + 10);
             }
     }
 }
