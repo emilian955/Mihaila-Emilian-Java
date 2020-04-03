@@ -1,11 +1,8 @@
 package com.emi;
 
-import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
-import java.util.Vector;
-
 public class Board {
     private int n;
     private List<Token> tokeni= new ArrayList<Token>();
@@ -13,7 +10,6 @@ public class Board {
         double x = Math.random();
         return x;
     }
-
     @Override
     public String toString() {
         return "Board{" +
@@ -29,5 +25,10 @@ public class Board {
             for (int i = 1; i<this.n; i++) {
                 list.add(r.nextInt(20) + 10);
             }
+        for (int i = 1; i<Math.sqrt(n); i++) {
+            for (int j = 1; j<Math.sqrt(n); j++)
+                System.out.print(tokeni.get(i+j)+" ");
+        }
+        System.out.println();
     }
 }
