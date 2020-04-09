@@ -7,9 +7,13 @@ import java.sql.Statement;
 
 public class AlbumController {
     String name;
+    int id;
     Connection con;
     public int artistId;
     public int releaseYear;
+    public void setname(int id_) {
+        this.id = id_;
+    }
     public void setname(String name_) {
         this.name = name_;
     }
@@ -25,8 +29,9 @@ public class AlbumController {
     public void setreleaseYear(int releaseYear_) {this.releaseYear = releaseYear_; }
     public int getreleaseYear() { return this.releaseYear; }
     public void create(String name, int artistId, int releaseYear){
-
-    }
+        String query = " insert into users (id, name, artist_id,release_year)"
+                + " values ("+this.id+", "+name+", "+artistId+", "+releaseYear+")";
+}
     public void findByArtist(int artistId) throws SQLException {
         Statement stmt=con.createStatement();
         ResultSet rs=stmt.executeQuery("select * from albums where artist_id="+this.artistId);
